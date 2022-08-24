@@ -1,0 +1,8 @@
+Section 3: Introduction to Back-End Web Development
+  - when you type in google.com, the domain name "google.com" isn't actually the address for the server google uses, so the domain name will
+    be converted to an actual IP address using a DNS (Domain Name Server)
+      ----> DNS - you type in a name, it spits out the IP address
+
+Section 6: Express
+  - RESTful API is basically just an API that follows the REST architecture
+    ----> Lecture 51 goes into more detail

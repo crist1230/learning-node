@@ -1,0 +1,41 @@
+What is nodejs?
+    - basically, it allows you to use js to build a server. It's got some tools that let you connect to the clients side and to the db
+
+- if you type node in the terminal it will open up the Node REPL (Read, Evaluate, Print, Loop) ctrl+d to exit & ctrl+l to clear
+
+After the project was completed, the module went on to talk about npm and I'm going to take notes on that here:
+
+- npm is basically a huge library including a lot of different Nodejs packages.
+
+1. When you start a new project, use "npm init" in the command line to initialize the registry.
+2. To install an npm package write in the command line "npm install *package-name*" (you can use "i" as a shorthand for install).
+    2.i. To specify a dependency as a dev. dependency, add "--save-dev" at the end of the package name.
+3. Use nodemon so you don't have to constantly be ending the server.
+    3.i. write in the command line "nodemon *file-name*".
+
+TYPES OF PACKAGES:
+    1. Simple Dependencies
+        - contain code we use in our own applications.
+        - ie: superheroes, supervillains, etc.
+    2. Development Dependencies 
+        - are tools for development.
+        - ie: debugger tools, testing packages, nodemon, etc.
+        - our code doesn't really depend on them, they are just used to make a programmer's life easier.
+    NOTE: we call these packages dependencies because our code depends on them in order to run.
+
+TYPES OF INSTALLS:
+    1. Local install
+        - When you install a package and it is only available in the folder/project you installed it in.
+    2. Global install
+        - You can install a package so that it's available in every directory in a computer.
+        - Do this by adding the global flag ("--g") to the end of the install line.
+
+- You can specify a script in the package.json file that gets installed when you run "npm init".
+    -> This will basically act like a variable that when you write "npm run *script*" the code you entered as script will run.
+    -> Looks like this:
+        "scripts": {
+            "start": "nodemon index.js"
+        }
+        -> When you write "npm run start" in the command line, it will run "nodemon index.js" in the background.
+            -> "start" is actually something of a default for scripts so in this case you don't have to include "run", you can just write "npm start".
+

@@ -1,0 +1,27 @@
+event-loop resources: https://www.javascripttutorial.net/javascript-event-loop/ , https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+Events:
+    emit: to produce (ex: emit a sound)
+    event emitters: when something important happens, the event emitter will emit a named event => then picked up by an event listener
+        this process is called the "observer pattern"
+
+Streams:
+    - instances of Event Emitters
+    - basically think about how when you're watching a video, the movie doesn't get loaded all at once, you get served a bit of
+      the movie piece by piece and you can watch while it's still loading 
+    - 4 types: readable, writable, duplex, & transform streams (readable and writable are most important)
+        ---> readable: you can read (consume) data (data is sent to us)
+                ex: http requests, fs read streams
+        ---> writable: you can write data
+                ex: http response, fs write streams (we send data to them)
+
+NOTE: res.end([data]) will tell the server this([data]) is the last thing it should expect as a response on a certain event call
+
+Modules:
+    - Node.js treats every .js file as a separate module
+    - 3 types of modules:
+          1. Core modules             // require('http');
+              - come with any files system
+          2. Developer modules        // require('./index');
+              - specific files on the computer
+          3. NPM 3rd-party modules    // require('express');
