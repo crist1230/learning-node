@@ -6,3 +6,6 @@ Section 3: Introduction to Back-End Web Development
 Section 6: Express
   - RESTful API is basically just an API that follows the REST architecture
     ----> Lecture 51 goes into more detail
+
+58. Middleware
+  - everything that happens between the request being sent and the response
